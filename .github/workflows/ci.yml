@@ -17,8 +17,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: Run model training
+      - name: Run MLflow Project
         env:
           DAGSHUB_USER_TOKEN: ${{ secrets.DAGSHUB_USER_TOKEN }}
         run: |
-          python modelling_tuning.py
+          pip install mlflow dagshub
+          mlflow run MLProject --env-manager=local
+
