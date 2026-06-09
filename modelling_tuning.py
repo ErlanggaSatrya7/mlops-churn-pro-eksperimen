@@ -8,7 +8,7 @@ import mlflow.sklearn
 import dagshub
 
 # 1. Koneksikan ke DagsHub
-dagshub.init(repo_owner='anggasatrya007', repo_name='telco-churn-mlops', mlflow=True)
+dagshub.init(repo_owner='anggasatrya007', repo_name='mlops-churn-pro-eksperimen', mlflow=True)
 
 # 2. Ambil data dari folder preprocessing (Sesuai Struktur Kriteria 1)
 df = pd.read_csv('preprocessing/data_siap_latih.csv')
