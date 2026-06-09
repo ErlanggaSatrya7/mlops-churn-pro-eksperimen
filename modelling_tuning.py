@@ -6,7 +6,7 @@ import mlflow.sklearn
 import dagshub
 
 # 1. Koneksi ke DagsHub Repo Baru
-dagshub.init(repo_owner='ErlanggaSatrya7', repo_name='mlops-churn-pro-eksperimen', mlflow=True)
+dagshub.init(repo_owner='anggasatrya007', repo_name='mlops-churn-pro-eksperimen', mlflow=True)
 
 # 2. Aktifkan Autolog TAPI matikan fungsi log_models bawaannya agar tidak tabrakan
 mlflow.sklearn.autolog(log_models=False)
